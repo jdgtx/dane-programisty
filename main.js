@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    dataProg=document.createElement('div');
+    $(dataProg).attr('id','dane-programisty');
+    $(dataProg).insertAfter($('button'));
+   
+
     $('button').click(function(){
         $.getJSON('https://akademia108.pl/kurs-front-end/ajax/1-pobierz-dane-programisty.php',function(jsonProgram){
 
